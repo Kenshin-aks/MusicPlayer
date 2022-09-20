@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./access/css/style.css">
+  <link rel="stylesheet" href="./access/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+  <div class="app">
+    <div class="app-fixed">
+      <header class="app-header">
+        <div class="header__icon"><i class="fa-solid fa-chevron-down"></i></div>
+        <div class="header__heading">
+          <p class="header__heading-playing">Now playing</p>
+          <h3 class="header__heading-song-name">Dẫu có lỗi lầm</h3>
+        </div>
+        <div class="header__icon"><i class="fa-solid fa-plus"></i></div>
+      </header>
+      <div class="app-slider">
+        <div class="slider__img" style="background-image: url(./access/image/dau-co-loi-lam.jpg);">
+          
+        </div>
+      </div>
+      <div class="app-nav">
+        <div class="nav__button-s nav__button-replay"><i class="fa-solid fa-rotate-right"></i></div>
+        <div class="nav__button-s nav__button-prev"><i class="fa-solid fa-backward-step"></i></div>
+        <!-- nav__button-playing -->
+        <div class="nav__playing-control">
+          <div class="nav__button-l nav__button-play"><i class="fa-solid fa-circle-play"></i></div>
+          <div class="nav__button-l nav__button-pause"><i class="fa-solid fa-circle-pause"></i></div>
+        </div>
+        <div class="nav__button-s nav__button-next"><i class="fa-solid fa-forward-step"></i></div>
+        <div class="nav__button-s nav__button-shuffle"><i class="fa-solid fa-shuffle"></i></div>
+      </div>
+      <div class="play-progress">
+        <input id="progress" class="progress" type="range" value="0" step="0.00001" min="0" max="100">
+        <audio id="audio" src=""></audio>
+      </div>
+      <div class="content__up-next">
+        <p>Up next:</p>
+      </div>
+    </div>
+  </div>
+    <div class="app-content">
+      <!-- playlist -->
+      <ul class="content__song-list">
+        <li class="content__song">
+          <div class="content__song-img" style="background-image:url(./access/image/blue-tequila.jpg) ;"></div>
+          <div class="content__song-info">
+            <h2 class="content__song-name">Blue Tequila</h2>
+            <p class="content__song-artist">Táo</p>
+          </div>
+          <div class="content__song-icon">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+    <footer class="app-footer">
+
+    </footer>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
